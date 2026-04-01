@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+    margin:0;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    background:#111;
+    color:white;
+}
+
+.hero {
+    text-align:center;
+    padding:80px;
+    background:linear-gradient(45deg,#111,#333);
+    color:white;
+}
+
+.card {
+    border:1px solid #ccc;
+    padding:20px;
+    margin:10px;
+}
+
+.canvas {
+    border:2px dashed #aaa;
+    height:400px;
+    margin:20px;
+}
+
+.toolbar button {
+    margin:5px;
+}

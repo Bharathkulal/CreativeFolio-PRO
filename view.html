@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Portfolio</title></head>
+<body>
+
+<div id="content"></div>
+
+<script>
+let id = new URLSearchParams(window.location.search).get("id");
+
+fetch("http://localhost:5000/api/portfolio/"+id)
+.then(res=>res.text())
+.then(html=>{
+    document.getElementById("content").innerHTML = html;
+});
+</script>
+
+</body>
+</html>
